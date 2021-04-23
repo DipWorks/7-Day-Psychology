@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+import urllib.parse as up
+import psycopg2
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -96,13 +98,22 @@ WSGI_APPLICATION = 'OnlineBookingSystem.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': '7DayPsychology',
+    #     'USER':'postgres',
+    #     'PASSWORD':'groupwork123',
+    #     'HOST':'localhost',
+    #     'PORT': '5432'
+    # }
+
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '7DayPsychology',
-        'USER':'postgres',
-        'PASSWORD':'groupwork123',
-        'HOST':'localhost',
-        'PORT': '5432'
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'jfiijgaz',
+        'USER': 'jfiijgaz',
+        'PASSWORD': 'xLS8CRlpRWzgrBnJkq1aaxf8zMN5_QIL',
+        'HOST': 'topsy.db.elephantsql.com',
+        'PORT': '',
     }
 }
 
