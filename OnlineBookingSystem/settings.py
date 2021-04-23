@@ -28,7 +28,7 @@ SECRET_KEY = 'q4wma%vt_^99f!_xi)vz7a5df0ncv+%0-(uga48l$7)^-7_dv('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['seven-day-psychology.herokuapp.com']
 
 #settings for sending email
 EMAIL_HOST    = 'smtp.gmail.com'
