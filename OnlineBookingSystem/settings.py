@@ -41,6 +41,7 @@ EMAIL_USE_TLS=True
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',
     'systemAdmin.apps.SystemadminConfig',
     'django.contrib.admin',
     'django.contrib.auth',
